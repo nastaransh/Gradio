@@ -52,7 +52,9 @@ You’ll see the interactive Gradio app running.
 
 
 virtualenv --no-download ENV
+
 source ENV/bin/activate
+
 pip install -r requirements_nibi.txt
 
 📝 Submit Job (SLURM)
