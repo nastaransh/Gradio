@@ -59,19 +59,23 @@ pip install -r requirements_nibi.txt
 
 📝 Submit Job (SLURM)
 Use a job submission script (e.g., job.sh) to launch the desired demo.
+
 sbatch job.sh
 
 🌐 Access Gradio Interface via Port Forwarding
 To view the Gradio interface running on the cluster, use SSH tunneling from your local machine:
 
 🖥️ On Your Local Machine
+
 ssh -L 7860:localhost:7860 <username>@nibi.alliancecan.ca
+
 Then, after logging in to the cluster’s login node:
 
 🔄 From Login Node to Compute Node
 Once your job is running on a compute node (e.g., node123), forward the port again:
 
 ssh -L 7860:localhost:7860 <username>@node123
+
 🔁 Replace <username> with your actual cluster username.
 
 Now, open http://127.0.0.1:7860 in your local browser to interact with the Gradio app running on the cluster.
