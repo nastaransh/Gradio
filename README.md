@@ -20,7 +20,9 @@ This repository contains 4 interactive [Gradio](https://gradio.app/) demo projec
 ### ✅ Setup (Local)
 
 python -m venv ENV
+
 source ENV/bin/activate
+
 pip install -r requirements_local.txt
 
 
@@ -48,7 +50,7 @@ You’ll see the interactive Gradio app running.
 
 ### ⚙️ Setup Environment on Cluster
 
-```bash
+
 virtualenv --no-download ENV
 source ENV/bin/activate
 pip install -r requirements_nibi.txt
